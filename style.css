@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    font-family: roboto,sans-serif;
+    padding:0;
+    margin:0;
+}
+
+p{
+    font-size: 14px;
+    letter-spacing:0.05rem;
+}
+
+.content p{
+    font-size:12px;
+}
+
+body{
+    background: #EBF3FF;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+
+.container{
+    width:40%;
+    height:auto;
+    box-shadow: 6px 6px 25px rgba(123, 176, 255, 0.3);
+    
+}
+
+.container .label{
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #01337F;
+    width:100%;
+    height:2.3rem;
+    color:white;
+    padding-left:15px;
+    padding-right:10px;
+    
+}
+
+.container .accordion.active .label.selected{
+    background-color:#0D69F2;
+    
+}
+
+
+
+.container .label:hover{
+    background-color:#0D69F2;
+    
+}
+
+
+.container .label::after{
+    font-size: 1.3rem;
+   content:"+";
+   color:white;
+   position:absolute;
+   right:15px;
+}
+
+.container .accordion.active .label.selected::after{
+    font-size: 2.3rem;
+   content:"-";
+   color:white;
+   position:absolute;
+   right:15px;
+}
+
+.accordion{
+    margin-bottom:5px;
+    
+}
+
+.accordion.last{
+    margin-bottom:0px;
+    
+}
+
+
+.container .accordion .content{
+    height:0;
+    padding:0px;   
+    overflow: hidden;
+    overflow-y: auto; 
+    transition:0.1s
+       
+}
+
+.container .accordion.active .content{
+    height:auto;
+    background:white;
+    color: #5B5B5B;
+    padding:13px;
+    margin-bottom:0px;
+    transition:0.1s
+}
+
+

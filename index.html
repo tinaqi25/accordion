@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>accordion</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script> 
+</head>
+
+<body>
+    <div class="container">
+        <div class="accordion">
+        <div class="label">
+           <p>Item 1</p>
+        </div>
+
+        <div class="content"><p>The NYCO Patterns provide simple and flexible 
+            CSS and JavaScript based components and utilities 
+            for building UI's quickly and easily. Ideally suited
+             for internal or external marketing websites, custom 
+             digital applications, stand-alone reports, documentation, 
+             and dashboards.</p>
+        </div>
+        </div>
+
+        <div class="accordion">
+            <div class="label">
+               <p>Item 2</p>
+            </div>
+    
+            <div class="content"><p>The NYCO Patterns provide simple and flexible 
+                CSS and JavaScript based components and utilities 
+                for building UI's quickly and easily. Ideally suited
+                 for internal or external marketing websites, custom 
+                 digital applications, stand-alone reports, documentation, 
+                 and dashboards.</p>
+            </div>
+            </div>
+
+            <div class="accordion last">
+                <div class="label">
+                   <p>Item 3</p>
+                </div>
+        
+                <div class="content"><p>The NYCO Patterns provide simple and flexible 
+                    CSS and JavaScript based components and utilities 
+                    for building UI's quickly and easily. Ideally suited
+                     for internal or external marketing websites, custom 
+                     digital applications, stand-alone reports, documentation, 
+                     and dashboards.</p>
+                </div>
+                </div>
+        
+    </div>
+
+
+    <script>
+        const accordion = document.getElementsByClassName('accordion');
+        const content = document.getElementsByClassName("content")
+        for(let i=0;i<accordion.length;i++){
+            accordion[i].onclick = function(event){
+                this.classList.toggle("active");
+                this.firstElementChild.classList.toggle("selected");
+                
+            }
+        }
+        feather.replace();
+    </script>
+
+
+</body>
+
+
+</html>
