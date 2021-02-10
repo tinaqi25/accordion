@@ -12,6 +12,7 @@ p{
 
 .content p{
     font-size:12px;
+    line-height: 17px;
 }
 
 body{
@@ -39,7 +40,7 @@ body{
     width:100%;
     height:2.3rem;
     color:white;
-    padding-left:16px;
+    padding-left:20px;
     padding-right:10px;
     
 }
@@ -97,10 +98,10 @@ body{
     height:auto;
     background:white;
     color: #5B5B5B;
-    padding:13px;
-    padding-left:16px;
+    padding:14px;
+    padding-left:20px;
     margin-bottom:0px;
-    transition:0.1s
+    transition:0.1s;
 }
 
 
